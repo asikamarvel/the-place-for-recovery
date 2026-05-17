@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | The Place for Recovery</title>
+    <meta
+      name="description"
+      content="Explore psychiatric, therapy, medication management, substance use treatment, and telehealth services at The Place for Recovery."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="assets/images/newlogo.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body data-page="services">
+    <div class="site-shell">
+      <div class="bg-orb one"></div>
+      <div class="bg-orb two"></div>
+
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="index.html" aria-label="The Place for Recovery home">
+            <img class="brand-logo" src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+            <div class="brand-copy">
+              <p class="brand-title">The Place for Recovery</p>
+              <p class="brand-sub">Empowering Minds, Transforming Lives</p>
+            </div>
+          </a>
+
+          <nav class="nav-desktop" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="home" href="index.html">Home</a>
+            <a class="nav-link" data-nav="about" href="about.html">About</a>
+            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+            <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+            <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="btn btn-primary nav-cta" href="#">Book Appointment</a>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              data-menu-toggle
+            >
+              &#9776;
+            </button>
+          </div>
+        </div>
+
+        <nav class="mobile-panel" data-mobile-panel aria-label="Mobile navigation">
+          <a class="nav-link" data-nav="home" href="index.html">Home</a>
+          <a class="nav-link" data-nav="about" href="about.html">About</a>
+          <a class="nav-link" data-nav="services" href="services.html">Services</a>
+          <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+          <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+          <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          <a class="btn btn-primary" href="#">Book Appointment</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-compare">
+          <article class="hero-bleed hero-bleed-page">
+            <div class="hero-bleed-bg" aria-hidden="true">
+              <img src="assets/images/unseen-studio-s9CC2SKySJM-unsplash.jpg" alt="" />
+            </div>
+            <div class="hero-bleed-overlay" aria-hidden="true"></div>
+            <div class="container hero-bleed-content">
+              <div class="page-hero-grid">
+                <div class="page-hero-copy" data-reveal>
+                  <span class="eyebrow">Our Services</span>
+                  <h1 class="hero-bleed-title">Comprehensive mental health services under one roof</h1>
+                  <p>
+                    Our integrated care model combines psychiatric diagnosis, medication management, psychotherapy, and substance use
+                    support. Services are available in-office and through secure telehealth visits.
+                  </p>
+                </div>
+                <div class="page-hero-card" data-reveal data-delay="1">
+                  <form class="service-search service-search--hero" data-condition-form>
+                    <label class="sr-only" for="condition-search">Search conditions</label>
+                    <input
+                      id="condition-search"
+                      type="search"
+                      placeholder="Search a condition or concern"
+                      data-condition-search
+                    />
+                    <button class="btn btn-soft" type="submit" data-condition-button>Search</button>
+                  </form>
+                  <div class="search-suggestions" data-condition-suggestions aria-hidden="true"></div>
+                  <p class="service-search-feedback" data-condition-feedback aria-live="polite"></p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">What we offer</span>
+              <h2>Organized care with clear next steps</h2>
+              <p>
+                We bring evaluation, medication, therapy, and recovery support together so your care stays consistent and
+                collaborative from day one.
+              </p>
+            </div>
+            <div class="grid cards-4 mobile-two">
+              <article class="card" data-reveal>
+                <div class="icon-dot"></div>
+                <h3>Psychiatric Evaluation</h3>
+                <p>Comprehensive assessments that clarify diagnosis and guide a practical treatment plan.</p>
+              </article>
+              <article class="card" data-reveal data-delay="1">
+                <div class="icon-dot"></div>
+                <h3>Medication Management</h3>
+                <p>Thoughtful prescribing, close monitoring, and clear education at every visit.</p>
+              </article>
+              <article class="card" data-reveal data-delay="2">
+                <div class="icon-dot"></div>
+                <h3>Psychotherapy Services</h3>
+                <p>Evidence-based therapy options for individuals, families, and groups across age ranges.</p>
+              </article>
+              <article class="card" data-reveal data-delay="3">
+                <div class="icon-dot"></div>
+                <h3>Substance Use Treatment</h3>
+                <p>Medication-assisted support and counseling for opioid and alcohol use disorder recovery.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section service-detail" id="diagnosis">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Diagnosis &amp; Treatment</span>
+              <h2>Psychiatric diagnosis and treatment planning</h2>
+              <p>
+                A clear diagnosis is where every good treatment plan starts. We take time to do a thorough evaluation so your
+                care is informed, accurate, and built around your real life.
+              </p>
+            </div>
+            <div class="split">
+              <div>
+                <h3>What we diagnose and treat</h3>
+                <div class="chip-list">
+                  <span class="chip">Major Depressive Disorder</span>
+                  <span class="chip">Generalized Anxiety</span>
+                  <span class="chip">Panic Disorder</span>
+                  <span class="chip">Bipolar Disorder</span>
+                  <span class="chip">Schizophrenia</span>
+                  <span class="chip">OCD</span>
+                  <span class="chip">PTSD</span>
+                  <span class="chip">ADHD</span>
+                  <span class="chip">Autism Spectrum Disorders</span>
+                  <span class="chip">Eating Disorders</span>
+                  <span class="chip">Sleep Disorders</span>
+                  <span class="chip">Personality Disorders</span>
+                </div>
+              </div>
+              <div>
+                <h3>What to expect</h3>
+                <ul class="tele-list">
+                  <li>A full psychiatric intake that is never rushed</li>
+                  <li>Diagnosis explained clearly in plain language</li>
+                  <li>Treatment options reviewed together so your input matters</li>
+                  <li>Follow-up built into every plan from day one</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section service-detail" id="medication">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Medication management</span>
+              <h2>Thoughtful prescribing with ongoing monitoring</h2>
+              <p>
+                Medication is not one-size-fits-all. We select options based on your history, goals, and response, then monitor
+                closely and adjust as needed.
+              </p>
+            </div>
+            <div class="sub-services">
+              <article class="sub-service" data-reveal>
+                <h3 class="sub-service__title">Antidepressants</h3>
+                <p class="sub-service__desc">SSRIs, SNRIs, and other agents for depression, anxiety, OCD, PTSD, and related conditions.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="1">
+                <h3 class="sub-service__title">Mood Stabilizers</h3>
+                <p class="sub-service__desc">For bipolar disorder and mood dysregulation, with routine monitoring when needed.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="2">
+                <h3 class="sub-service__title">Antipsychotics</h3>
+                <p class="sub-service__desc">Oral and long-acting injectable options for schizophrenia and severe mood disorders.</p>
+              </article>
+              <article class="sub-service" data-reveal>
+                <h3 class="sub-service__title">ADHD Medications</h3>
+                <p class="sub-service__desc">Stimulant and non-stimulant options for children and adults, tailored to your routine.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="1">
+                <h3 class="sub-service__title">Anti-Anxiety Options</h3>
+                <p class="sub-service__desc">Responsible, targeted prescribing with long-term stability in mind.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="2">
+                <h3 class="sub-service__title">Long-Acting Injectables</h3>
+                <p class="sub-service__desc">Monthly injectables for patients who prefer not to manage daily oral medication.</p>
+              </article>
+            </div>
+            <ul class="tele-list" data-reveal>
+              <li>Clear explanation of benefits and side effects</li>
+              <li>Regular follow-ups and dose adjustments</li>
+              <li>Lab monitoring when clinically needed</li>
+              <li>Telehealth check-ins for convenience</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section service-detail" id="substance-use">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Substance use recovery</span>
+              <h2>Medication-assisted support without judgment</h2>
+              <p>
+                Substance use disorders are medical conditions, not moral failures. We provide Medication-Assisted Treatment (MAT)
+                alongside counseling and relapse-prevention planning.
+              </p>
+            </div>
+            <div class="split">
+              <div>
+                <h3>Opioid use disorder</h3>
+                <div class="sub-services single">
+                  <article class="sub-service">
+                    <h3 class="sub-service__title">Buprenorphine (Suboxone / Subutex)</h3>
+                    <p class="sub-service__desc">Reduces cravings and withdrawal while stabilizing daily life.</p>
+                  </article>
+                  <article class="sub-service">
+                    <h3 class="sub-service__title">Naltrexone (Vivitrol)</h3>
+                    <p class="sub-service__desc">Monthly injectable option for patients committed to abstinence-based recovery.</p>
+                  </article>
+                  <article class="sub-service">
+                    <h3 class="sub-service__title">Methadone referrals</h3>
+                    <p class="sub-service__desc">We coordinate referrals to appropriate treatment centers when needed.</p>
+                  </article>
+                </div>
+              </div>
+              <div>
+                <h3>Alcohol use disorder</h3>
+                <div class="sub-services single">
+                  <article class="sub-service">
+                    <h3 class="sub-service__title">Naltrexone (oral / injectable)</h3>
+                    <p class="sub-service__desc">Reduces cravings and the rewarding effects of drinking.</p>
+                  </article>
+                  <article class="sub-service">
+                    <h3 class="sub-service__title">Acamprosate</h3>
+                    <p class="sub-service__desc">Supports abstinence after detox by restoring chemical balance.</p>
+                  </article>
+                  <article class="sub-service">
+                    <h3 class="sub-service__title">Disulfiram (Antabuse)</h3>
+                    <p class="sub-service__desc">A deterrent medication for patients who want strong behavioral support.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section service-detail" id="therapy">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Psychotherapy</span>
+              <h2>Evidence-based therapy options</h2>
+              <p>Therapy plans are personalized to goals, developmental stage, and clinical needs.</p>
+            </div>
+            <div class="sub-services">
+              <article class="sub-service" data-reveal>
+                <h3 class="sub-service__title">Cognitive Behavioral Therapy (CBT)</h3>
+                <p class="sub-service__desc">Identify and reframe thought patterns driving anxiety, depression, and unhelpful behaviors.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="1">
+                <h3 class="sub-service__title">Dialectical Behavior Therapy (DBT)</h3>
+                <p class="sub-service__desc">Mindfulness, emotional regulation, distress tolerance, and interpersonal effectiveness.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="2">
+                <h3 class="sub-service__title">Acceptance &amp; Commitment Therapy (ACT)</h3>
+                <p class="sub-service__desc">Commit to values-driven action while learning to accept difficult thoughts and feelings.</p>
+              </article>
+              <article class="sub-service" data-reveal>
+                <h3 class="sub-service__title">Interpersonal Therapy (IPT)</h3>
+                <p class="sub-service__desc">Build healthier relationships and communication, especially during life transitions.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="1">
+                <h3 class="sub-service__title">Individual Therapy</h3>
+                <p class="sub-service__desc">One-on-one sessions in a confidential space with support tailored to your goals.</p>
+              </article>
+              <article class="sub-service" data-reveal data-delay="2">
+                <h3 class="sub-service__title">Family &amp; Group Therapy</h3>
+                <p class="sub-service__desc">Strengthen support systems, improve communication, and rebuild trust together.</p>
+              </article>
+              <article class="sub-service" data-reveal>
+                <h3 class="sub-service__title">Play Therapy (Children)</h3>
+                <p class="sub-service__desc">Age-appropriate support that helps children express emotions and build coping skills.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section service-detail" id="wellness">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Whole-person wellness</span>
+              <h2>Weight management, primary care, and onsite lab services</h2>
+              <p>
+                We pair psychiatric care with wellness and medical services that support long-term health, recovery, and daily
+                function.
+              </p>
+            </div>
+            <div class="grid cards-2">
+              <article class="card" data-reveal>
+                <h3>Weight Loss Management</h3>
+                <p>Personalized plans that combine nutrition, movement, and behavioral support for sustainable progress.</p>
+                <ul>
+                  <li>Custom nutrition and activity plans</li>
+                  <li>Coaching and accountability</li>
+                  <li>Progress tracking over time</li>
+                </ul>
+              </article>
+              <article class="card" data-reveal data-delay="1">
+                <h3>Postpartum Weight Management</h3>
+                <p>Support for new mothers focused on safe recovery, emotional wellness, and routines that fit life with a baby.</p>
+                <ul>
+                  <li>Postpartum nutrition guidance</li>
+                  <li>Gentle movement planning</li>
+                  <li>Mental and emotional support</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="section-head" data-reveal style="margin-top: 2rem">
+              <h3>Onsite laboratory and diagnostic services</h3>
+              <p>Partnered with Clipath Medical Laboratory for fast, reliable testing and quick turnaround.</p>
+            </div>
+            <div class="grid cards-3">
+              <article class="card" data-reveal>
+                <h4>General lab testing</h4>
+                <p>Blood work, metabolic panels, cholesterol screens, and routine diagnostics.</p>
+              </article>
+              <article class="card" data-reveal data-delay="1">
+                <h4>DNA Med Match</h4>
+                <p>Genetic insights to guide medication choices and reduce trial and error.</p>
+              </article>
+              <article class="card" data-reveal data-delay="2">
+                <h4>Neurotransmitter testing</h4>
+                <p>Measures key levels to guide care for mood, behavior, and cognitive support.</p>
+              </article>
+            </div>
+            <div class="grid cards-2" style="margin-top: 18px">
+              <article class="card" data-reveal>
+                <h4>Drug testing services</h4>
+                <p>Confidential testing for employment needs, monitoring, or personal insight.</p>
+              </article>
+              <article class="card" data-reveal data-delay="1">
+                <h4>Onsite primary care provider</h4>
+                <p>Checkups, vaccinations, screenings, and chronic condition management in one place.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="faq">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Common questions</span>
+              <h2>Things people usually ask</h2>
+              <p>Clear answers to help you decide on the next step.</p>
+            </div>
+            <div class="faq-list" data-reveal data-delay="1">
+              <details class="faq-item">
+                <summary>Do I need a referral to make an appointment?</summary>
+                <p>No referral is required. You can book directly, and we will verify coverage if your plan requires it.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Do you offer both therapy and medication management?</summary>
+                <p>Yes. You can choose either or both, and we coordinate everything under one plan.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Can I be seen via telehealth if I am in Maryland?</summary>
+                <p>Yes. We are licensed in Pennsylvania and Maryland, so telehealth visits are available in both states.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Do you see children and teenagers?</summary>
+                <p>Yes. We provide psychiatric care for children, adolescents, and adults, with family involvement when needed.</p>
+              </details>
+              <details class="faq-item">
+                <summary>How long does treatment usually take?</summary>
+                <p>It depends on your goals and needs. Some people improve in a few months, while others benefit from longer-term support.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Is my information kept confidential?</summary>
+                <p>Absolutely. We are HIPAA-compliant for both in-person and telehealth visits.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container video-panel" data-reveal aria-label="Telehealth care video">
+            <video autoplay muted loop playsinline poster="assets/images/tamara-govedarovic-RybaeepDljg-unsplash.jpg">
+              <source src="assets/video/background-video.mp4" type="video/mp4" />
+            </video>
+            <div class="overlay"></div>
+            <div class="video-copy">
+              <h3>Comprehensive telehealth services</h3>
+              <p>
+                We understand busy schedules. Our HIPAA-compliant telehealth visits provide many of the same services as in-office
+                appointments while reducing travel time and barriers to care.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="telehealth.html">Explore Telehealth Options</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <article class="accent-panel" data-reveal>
+              <div>
+                <h3>Need help choosing the right service?</h3>
+                <p>Start with an evaluation, and we will build a step-by-step plan around your needs.</p>
+              </div>
+              <a class="btn btn-primary" href="#">Book Appointment</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <img src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+              <div>
+                <strong>The Place for Recovery</strong>
+                <p>Empowering Minds, Transforming Lives.</p>
+              </div>
+            </div>
+            <a class="btn btn-primary" href="#">Book Appointment</a>
+          </div>
+
+          <div class="footer-grid">
+            <div>
+              <h4>About</h4>
+              <p>
+                Outpatient psychiatric and mental health care for adults, adolescents, and children. Compassionate, trauma-informed,
+                and evidence-based support.
+              </p>
+            </div>
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="telehealth.html">Telehealth</a></li>
+                <li><a href="adhd-testing.html">ADHD Testing</a></li>
+                <li><a href="insurances-payments.html">Payments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="tel:7173789076">Call: 717-378-9076</a></li>
+                <li><a href="mailto:queenchinonye@yahoo.com">queenchinonye@yahoo.com</a></li>
+                <li>Manchester, Pennsylvania</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <ul>
+                <li>Monday-Friday: 8:00 am - 5:00 pm</li>
+                <li>Saturday-Sunday: Closed</li>
+                <li>Telehealth and in-office by appointment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>Copyright <span data-year></span> The Place for Recovery. All rights reserved.</span>
+            <span>Serving Pennsylvania and Maryland</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

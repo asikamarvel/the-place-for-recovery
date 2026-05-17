@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | The Place for Recovery</title>
+    <meta
+      name="description"
+      content="Contact The Place for Recovery for psychiatric care, telehealth visits, referrals, and appointment requests."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="assets/images/newlogo.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body data-page="contact">
+    <div class="site-shell">
+      <div class="bg-orb one"></div>
+      <div class="bg-orb two"></div>
+
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="index.html" aria-label="The Place for Recovery home">
+            <img class="brand-logo" src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+            <div class="brand-copy">
+              <p class="brand-title">The Place for Recovery</p>
+              <p class="brand-sub">Empowering Minds, Transforming Lives</p>
+            </div>
+          </a>
+
+          <nav class="nav-desktop" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="home" href="index.html">Home</a>
+            <a class="nav-link" data-nav="about" href="about.html">About</a>
+            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+            <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+            <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="btn btn-primary nav-cta" href="#">Book Appointment</a>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              data-menu-toggle
+            >
+              &#9776;
+            </button>
+          </div>
+        </div>
+
+        <nav class="mobile-panel" data-mobile-panel aria-label="Mobile navigation">
+          <a class="nav-link" data-nav="home" href="index.html">Home</a>
+          <a class="nav-link" data-nav="about" href="about.html">About</a>
+          <a class="nav-link" data-nav="services" href="services.html">Services</a>
+          <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+          <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+          <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          <a class="btn btn-primary" href="#">Book Appointment</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-compare">
+          <article class="hero-bleed hero-bleed-page">
+            <div class="hero-bleed-bg" aria-hidden="true">
+              <img src="assets/images/lawrence-crayton-cVb7BGt9FiQ-unsplash.jpg" alt="" />
+            </div>
+            <div class="hero-bleed-overlay" aria-hidden="true"></div>
+            <div class="container hero-bleed-content" data-reveal>
+              <span class="eyebrow">Contact Us</span>
+              <h1 class="hero-bleed-title">Talk to our team and take the next step toward recovery</h1>
+              <p>
+                Have questions about services, referrals, or scheduling? Reach out and we will guide you to the right appointment
+                type.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="container grid cards-3">
+            <article class="card" data-reveal>
+              <h3>Call or Text</h3>
+              <p><a href="tel:7173789076">717-378-9076</a></p>
+            </article>
+            <article class="card" data-reveal data-delay="1">
+              <h3>Email</h3>
+              <p><a href="mailto:queenchinonye@yahoo.com">queenchinonye@yahoo.com</a></p>
+            </article>
+            <article class="card" data-reveal data-delay="2">
+              <h3>Location</h3>
+              <p>Manchester, Pennsylvania</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container split">
+            <article class="card" data-reveal>
+              <h3>Send us a message</h3>
+              <p style="margin-bottom: 12px">
+                Fill this form and our team will follow up shortly.
+              </p>
+              <form class="form" action="mailto:queenchinonye@yahoo.com" method="post" enctype="text/plain">
+                <div class="row">
+                  <label>
+                    First name
+                    <input type="text" name="first-name" required />
+                  </label>
+                  <label>
+                    Last name
+                    <input type="text" name="last-name" required />
+                  </label>
+                </div>
+                <div class="row">
+                  <label>
+                    Email
+                    <input type="email" name="email" required />
+                  </label>
+                  <label>
+                    Phone
+                    <input type="tel" name="phone" />
+                  </label>
+                </div>
+                <label>
+                  Reason for contact
+                  <select name="reason">
+                    <option value="new-patient">New patient inquiry</option>
+                    <option value="adhd-testing">ADHD testing</option>
+                    <option value="medication">Medication management</option>
+                    <option value="therapy">Therapy services</option>
+                    <option value="referral">Provider referral</option>
+                  </select>
+                </label>
+                <label>
+                  Message
+                  <textarea name="message" required></textarea>
+                </label>
+                <button class="btn btn-primary" type="submit">Send Request</button>
+              </form>
+            </article>
+
+            <div class="grid" data-reveal data-delay="1">
+              <article class="card">
+                <h3>Hours of operation</h3>
+                <ul>
+                  <li>Monday-Friday: 8:00 am - 5:00 pm</li>
+                  <li>Saturdays and Sundays: Closed</li>
+                  <li>Telehealth and office visits by appointment</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Referring providers</h3>
+                <p>
+                  Fast access to psychiatric evaluations, medication management, and telehealth services for your patients.
+                  Contact us directly to begin a referral.
+                </p>
+                <div class="hero-actions" style="margin-top: 14px">
+                  <a class="btn btn-soft" href="mailto:queenchinonye@yahoo.com?subject=Patient%20Referral">Start Referral</a>
+                </div>
+              </article>
+              <figure class="hero-media">
+                <img src="assets/images/youssef-naddam-iJ2IG8ckCpA-unsplash.jpg" alt="Calm office workspace" />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <article class="accent-panel" data-reveal>
+              <div>
+                <h3>Ready to book your first appointment?</h3>
+                <p>Use our booking button and we will get you matched with the right service path.</p>
+              </div>
+              <a class="btn btn-primary" href="#">Book Appointment</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <img src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+              <div>
+                <strong>The Place for Recovery</strong>
+                <p>Empowering Minds, Transforming Lives.</p>
+              </div>
+            </div>
+            <a class="btn btn-primary" href="#">Book Appointment</a>
+          </div>
+
+          <div class="footer-grid">
+            <div>
+              <h4>About</h4>
+              <p>
+                Outpatient psychiatric and mental health care for adults, adolescents, and children. Compassionate, trauma-informed,
+                and evidence-based support.
+              </p>
+            </div>
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="telehealth.html">Telehealth</a></li>
+                <li><a href="adhd-testing.html">ADHD Testing</a></li>
+                <li><a href="insurances-payments.html">Payments</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="tel:7173789076">Call: 717-378-9076</a></li>
+                <li><a href="mailto:queenchinonye@yahoo.com">queenchinonye@yahoo.com</a></li>
+                <li>Manchester, Pennsylvania</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <ul>
+                <li>Monday-Friday: 8:00 am - 5:00 pm</li>
+                <li>Saturday-Sunday: Closed</li>
+                <li>Telehealth and in-office by appointment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>Copyright <span data-year></span> The Place for Recovery. All rights reserved.</span>
+            <span>Serving Pennsylvania and Maryland</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
