@@ -141,7 +141,7 @@ video {
 .brand-title {
   margin: 0;
   font-family: "Sora", "Trebuchet MS", sans-serif;
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   line-height: 1.12;
   letter-spacing: 0.02em;
   font-weight: 700;
@@ -150,7 +150,7 @@ video {
 .brand-sub {
   margin: 0;
   line-height: 1.12;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   color: var(--muted);
 }
 
@@ -163,7 +163,7 @@ video {
 .nav-link {
   padding: 10px 12px;
   border-radius: 999px;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--muted);
   transition: color 0.2s ease, background-color 0.2s ease;
@@ -300,7 +300,7 @@ video {
   margin: 0;
   max-width: 60ch;
   color: var(--muted);
-  font-size: clamp(1rem, 1.35vw, 1.14rem);
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
 }
 
 .hero-actions {
@@ -513,7 +513,7 @@ video {
 .section-head p {
   margin: 12px 0 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .section-motto {
@@ -563,7 +563,7 @@ video {
 .card p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: 1.02rem;
 }
 
 .card ul {
@@ -582,6 +582,57 @@ video {
   border-radius: 50%;
   background: linear-gradient(135deg, rgba(141, 192, 204, 0.9), rgba(108, 180, 162, 0.95));
   margin-bottom: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.icon-dot::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+}
+
+.icon-dot.icon-assessment {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Crect x='6' y='4' width='12' height='16' rx='2' fill='black'/%3E%3Crect x='9' y='2' width='6' height='4' rx='1' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-medication {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Crect x='4' y='7' width='16' height='10' rx='5' fill='black'/%3E%3Crect x='11' y='7' width='2' height='10' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-therapy {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Cpath d='M4 6h16v9H9l-5 5V6z' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-substance {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Cpath d='M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3z' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-heart {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Cpath d='M12 20s-7-4.5-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.5-7 9-7 9z' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-lab {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Cpath d='M9 3h6v2h-1v4l5 9a2 2 0 0 1-2 3H7a2 2 0 0 1-2-3l5-9V5H9z' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-dna {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Crect x='7' y='5' width='2' height='4' fill='black'/%3E%3Crect x='9' y='9' width='6' height='2' fill='black'/%3E%3Crect x='15' y='11' width='2' height='4' fill='black'/%3E%3Crect x='9' y='13' width='6' height='2' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-primary {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Cpath d='M6 5v4a4 4 0 0 0 8 0V5h2v4a6 6 0 0 1-12 0V5z' fill='black'/%3E%3Ccircle cx='18' cy='14' r='3' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-experience {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Cpath d='M12 3l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.2-4.1 5.8-.8z' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-dot.icon-confidential {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0%200%2024%2024'%3E%3Crect x='6' y='11' width='12' height='9' rx='2' fill='black'/%3E%3Crect x='9' y='6' width='6' height='5' rx='3' fill='black'/%3E%3C/svg%3E");
 }
 
 .chip-list {
@@ -603,7 +654,7 @@ video {
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 10px 14px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   background: #ffffff;
   color: var(--text);
 }
@@ -611,14 +662,14 @@ video {
 .service-search-note {
   margin: 0 0 12px;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .service-search-feedback {
   margin: 8px 0 0;
   min-height: 1.2em;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .service-search-feedback.is-error {
@@ -708,7 +759,7 @@ video {
 .sub-service__desc {
   margin: 0;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.98rem;
 }
 
 .faq-list {
@@ -761,7 +812,7 @@ video {
   margin: 0;
   padding: 0 16px 16px;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .condition-marquee {
@@ -980,7 +1031,7 @@ video {
 .step p {
   margin: 6px 0 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .video-panel {
@@ -1024,6 +1075,7 @@ video {
 .video-copy p {
   margin: 0;
   color: rgba(231, 244, 242, 0.86);
+  font-size: 1rem;
 }
 
 .carousel-shell {
@@ -1071,7 +1123,7 @@ video {
 
 .quote-meta {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   font-weight: 600;
 }
 
@@ -1105,7 +1157,7 @@ video {
 
 .quote-meta span {
   color: var(--muted);
-  font-size: 0.83rem;
+  font-size: 0.88rem;
   font-weight: 600;
 }
 
@@ -1242,6 +1294,7 @@ video {
   position: relative;
   padding-left: 24px;
   color: var(--muted);
+  font-size: 0.98rem;
 }
 
 .tele-list li::before {
@@ -1286,6 +1339,7 @@ video {
   margin: 0;
   max-width: 72ch;
   color: var(--muted);
+  font-size: 1.05rem;
 }
 
 .service-search--hero {
@@ -1583,12 +1637,17 @@ textarea {
     min-height: 88px;
   }
 
+  .nav-link {
+    font-size: 0.92rem;
+  }
+
   .brand-title {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .brand-sub {
-    display: none;
+    display: block;
+    font-size: 0.72rem;
   }
 
   .hero {
