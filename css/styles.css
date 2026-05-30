@@ -455,6 +455,16 @@ video {
   background: rgba(141, 192, 204, 0.2);
 }
 
+.hero-bleed .btn-soft {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.32);
+  color: #f2fbfa;
+}
+
+.hero-bleed .btn-soft:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
 .hero-bleed-title {
   margin: 16px 0 18px;
   font-family: "Sora", "Trebuchet MS", sans-serif;
