@@ -36,7 +36,15 @@
           <nav class="nav-desktop" aria-label="Primary navigation">
             <a class="nav-link" data-nav="home" href="index.html">Home</a>
             <a class="nav-link" data-nav="about" href="about.html">About</a>
-            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <div class="nav-item has-sub">
+              <a class="nav-link" data-nav="services" href="services.html" aria-haspopup="true">Services</a>
+              <div class="nav-dropdown" aria-label="Service categories">
+                <a class="nav-dropdown-link" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+                <a class="nav-dropdown-link" href="medication-management.html">Medication Management</a>
+                <a class="nav-dropdown-link" href="psychotherapy-services.html">Psychotherapy Services</a>
+                <a class="nav-dropdown-link" href="substance-use-treatment.html">Substance Use Treatment</a>
+              </div>
+            </div>
             <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
             <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
             <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
@@ -59,7 +67,15 @@
         <nav class="mobile-panel" data-mobile-panel aria-label="Mobile navigation">
           <a class="nav-link" data-nav="home" href="index.html">Home</a>
           <a class="nav-link" data-nav="about" href="about.html">About</a>
-          <a class="nav-link" data-nav="services" href="services.html">Services</a>
+          <div class="nav-group">
+            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <div class="nav-submenu" aria-label="Service categories">
+              <a class="nav-sublink" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+              <a class="nav-sublink" href="medication-management.html">Medication Management</a>
+              <a class="nav-sublink" href="psychotherapy-services.html">Psychotherapy Services</a>
+              <a class="nav-sublink" href="substance-use-treatment.html">Substance Use Treatment</a>
+            </div>
+          </div>
           <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
           <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
           <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
@@ -132,21 +148,33 @@
                 <div class="icon-dot icon-assessment"></div>
                 <h3>Psychiatric Evaluation</h3>
                 <p>Clear diagnostic assessments to understand symptoms, history, and the right next step.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="psychiatric-evaluation.html">Learn more</a>
+                </div>
               </article>
               <article class="card" data-reveal data-delay="2">
                 <div class="icon-dot icon-therapy"></div>
                 <h3>Psychotherapy</h3>
                 <p>Individual, family, and group therapy options including CBT, DBT, ACT, IPT, and play therapy.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="psychotherapy-services.html">Learn more</a>
+                </div>
               </article>
               <article class="card" data-reveal data-delay="2">
-                <div class="icon-dot icon-therapy"></div>
-                <h3>Psychotherapy</h3>
-                <p>Individual, family, and group therapy options including CBT, DBT, ACT, IPT, and play therapy.</p>
+                <div class="icon-dot icon-medication"></div>
+                <h3>Medication Management</h3>
+                <p>Thoughtful prescribing, close monitoring, and clear education at every visit.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="medication-management.html">Learn more</a>
+                </div>
               </article>
               <article class="card" data-reveal data-delay="3">
                 <div class="icon-dot icon-substance"></div>
                 <h3>Substance Use Management</h3>
                 <p>Medication management for substance use with counseling and relapse-prevention planning.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="substance-use-treatment.html">Learn more</a>
+                </div>
               </article>
             </div>
 

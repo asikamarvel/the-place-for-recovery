@@ -36,7 +36,15 @@
           <nav class="nav-desktop" aria-label="Primary navigation">
             <a class="nav-link" data-nav="home" href="index.html">Home</a>
             <a class="nav-link" data-nav="about" href="about.html">About</a>
-            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <div class="nav-item has-sub">
+              <a class="nav-link" data-nav="services" href="services.html" aria-haspopup="true">Services</a>
+              <div class="nav-dropdown" aria-label="Service categories">
+                <a class="nav-dropdown-link" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+                <a class="nav-dropdown-link" href="medication-management.html">Medication Management</a>
+                <a class="nav-dropdown-link" href="psychotherapy-services.html">Psychotherapy Services</a>
+                <a class="nav-dropdown-link" href="substance-use-treatment.html">Substance Use Treatment</a>
+              </div>
+            </div>
             <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
             <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
             <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
@@ -59,7 +67,15 @@
         <nav class="mobile-panel" data-mobile-panel aria-label="Mobile navigation">
           <a class="nav-link" data-nav="home" href="index.html">Home</a>
           <a class="nav-link" data-nav="about" href="about.html">About</a>
-          <a class="nav-link" data-nav="services" href="services.html">Services</a>
+          <div class="nav-group">
+            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <div class="nav-submenu" aria-label="Service categories">
+              <a class="nav-sublink" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+              <a class="nav-sublink" href="medication-management.html">Medication Management</a>
+              <a class="nav-sublink" href="psychotherapy-services.html">Psychotherapy Services</a>
+              <a class="nav-sublink" href="substance-use-treatment.html">Substance Use Treatment</a>
+            </div>
+          </div>
           <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
           <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
           <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
@@ -109,8 +125,10 @@
               <span class="eyebrow">What we offer</span>
               <h2>Organized care with clear next steps</h2>
               <p>
-                We bring evaluation, medication, therapy, and recovery support together so your care stays consistent and
-                collaborative from day one.
+                Our mission is to provide compassionate, evidence-based psychiatric care tailored to everyone's unique needs. With
+                a focus on holistic treatment, we offer a range of services, including psychiatric evaluations, medication
+                management, psychotherapy, and substance use treatment. Our experienced team is committed to guiding you on your
+                journey to recovery.
               </p>
             </div>
             <div class="grid cards-4 mobile-two">
@@ -118,21 +136,33 @@
                 <div class="icon-dot icon-assessment"></div>
                 <h3>Psychiatric Evaluation</h3>
                 <p>Comprehensive assessments that clarify diagnosis and guide a practical treatment plan.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="psychiatric-evaluation.html">Read more</a>
+                </div>
               </article>
               <article class="card" data-reveal data-delay="1">
                 <div class="icon-dot icon-medication"></div>
                 <h3>Medication Management</h3>
                 <p>Thoughtful prescribing, close monitoring, and clear education at every visit.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="medication-management.html">Read more</a>
+                </div>
               </article>
               <article class="card" data-reveal data-delay="2">
                 <div class="icon-dot icon-therapy"></div>
                 <h3>Psychotherapy Services</h3>
                 <p>Evidence-based therapy options for individuals, families, and groups across age ranges.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="psychotherapy-services.html">Read more</a>
+                </div>
               </article>
               <article class="card" data-reveal data-delay="3">
                 <div class="icon-dot icon-substance"></div>
                 <h3>Substance Use Treatment</h3>
                 <p>Medication management for substance use and counseling for opioid and alcohol use disorder recovery.</p>
+                <div class="card-actions">
+                  <a class="btn btn-soft" href="substance-use-treatment.html">Read more</a>
+                </div>
               </article>
             </div>
           </div>
@@ -152,18 +182,18 @@
               <div>
                 <h3>What we diagnose and treat</h3>
                 <div class="chip-list">
-                  <span class="chip">Major Depressive Disorder</span>
-                  <span class="chip">Generalized Anxiety</span>
-                  <span class="chip">Panic Disorder</span>
-                  <span class="chip">Bipolar Disorder</span>
-                  <span class="chip">Schizophrenia</span>
-                  <span class="chip">OCD</span>
-                  <span class="chip">PTSD</span>
-                  <span class="chip">ADHD</span>
-                  <span class="chip">Autism Spectrum Disorders</span>
-                  <span class="chip">Eating Disorders</span>
-                  <span class="chip">Sleep Disorders</span>
-                  <span class="chip">Personality Disorders</span>
+                  <a class="chip chip-link" href="conditions.html#major-depressive-disorder">Major Depressive Disorder</a>
+                  <a class="chip chip-link" href="conditions.html#generalized-anxiety-disorder">Generalized Anxiety</a>
+                  <a class="chip chip-link" href="conditions.html#panic-disorder">Panic Disorder</a>
+                  <a class="chip chip-link" href="conditions.html#bipolar-disorder">Bipolar Disorder</a>
+                  <a class="chip chip-link" href="conditions.html#schizophrenia">Schizophrenia</a>
+                  <a class="chip chip-link" href="conditions.html#obsessive-compulsive-disorder">OCD</a>
+                  <a class="chip chip-link" href="conditions.html#post-traumatic-stress-disorder">PTSD</a>
+                  <a class="chip chip-link" href="conditions.html#attention-deficit-hyperactivity-disorder">ADHD</a>
+                  <a class="chip chip-link" href="conditions.html#autism-spectrum-disorders">Autism Spectrum Disorders</a>
+                  <a class="chip chip-link" href="conditions.html#eating-disorders">Eating Disorders</a>
+                  <a class="chip chip-link" href="conditions.html#sleep-disorders">Sleep Disorders</a>
+                  <a class="chip chip-link" href="conditions.html#personality-disorders">Personality Disorders</a>
                 </div>
               </div>
               <div>
@@ -175,6 +205,9 @@
                   <li>Follow-up built into every plan from day one</li>
                 </ul>
               </div>
+            </div>
+            <div class="section-cta" data-reveal>
+              <a class="btn btn-soft" href="psychiatric-evaluation.html">Read more about psychiatric evaluation</a>
             </div>
           </div>
         </section>
@@ -221,6 +254,9 @@
               <li>Lab monitoring when clinically needed</li>
               <li>Telehealth check-ins for convenience</li>
             </ul>
+            <div class="section-cta" data-reveal>
+              <a class="btn btn-soft" href="medication-management.html">Read more about medication management</a>
+            </div>
           </div>
         </section>
 
@@ -270,6 +306,9 @@
                 </div>
               </div>
             </div>
+            <div class="section-cta" data-reveal>
+              <a class="btn btn-soft" href="substance-use-treatment.html">Read more about substance use treatment</a>
+            </div>
           </div>
         </section>
 
@@ -309,6 +348,9 @@
                 <h3 class="sub-service__title">Play Therapy (Children)</h3>
                 <p class="sub-service__desc">Age-appropriate support that helps children express emotions and build coping skills.</p>
               </article>
+            </div>
+            <div class="section-cta" data-reveal>
+              <a class="btn btn-soft" href="psychotherapy-services.html">Read more about psychotherapy services</a>
             </div>
           </div>
         </section>
@@ -372,6 +414,22 @@
                 <p>Checkups, vaccinations, screenings, and chronic condition management in one place.</p>
               </article>
             </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <article class="accent-panel" data-reveal>
+              <div>
+                <h3>Your path to recovery begins here</h3>
+                <p>
+                  At The Place for Recovery, we are dedicated to guiding you on your journey toward mental wellness and recovery.
+                  If you or a loved one is in need of compassionate and personalized psychiatric care, contact us today to
+                  schedule an appointment. Let us help you find your path to recovery.
+                </p>
+              </div>
+              <a class="btn btn-primary" href="contact.html">Contact Us</a>
+            </article>
           </div>
         </section>
 
