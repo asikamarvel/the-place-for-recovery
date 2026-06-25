@@ -2,7 +2,7 @@
   var body = document.body;
   var menuToggle = document.querySelector("[data-menu-toggle]");
   var mobilePanel = document.querySelector("[data-mobile-panel]");
-  var bookingUrl = "https://provider.kareo.com/queen-alajemba#?view=booking";
+  var bookingUrl = "https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_115878";
   var loginUrl = "https://portal.kareo.com/app/new/login";
   var loginModal;
   var loginIframe;
@@ -125,14 +125,20 @@
   }
 
   document.querySelectorAll(".footer-top").forEach(function (footerTop) {
+    var bookingButton = footerTop.querySelector('a[href="#"]');
     if (!footerTop.querySelector("[data-login-launch]")) {
-      footerTop.appendChild(createCompactLoginButton());
+      var loginButton = createCompactLoginButton();
+      if (bookingButton && bookingButton.parentElement === footerTop) {
+        bookingButton.insertAdjacentElement("afterend", loginButton);
+      } else {
+        footerTop.appendChild(loginButton);
+      }
     }
   });
 
   if (body.getAttribute("data-page") === "home") {
     var updateBookingButtonState = function () {
-      body.classList.toggle("booking-button-scrolled", window.scrollY > 140);
+      body.classList.toggle("booking-button-scrolled", window.scrollY > 160);
     };
 
     updateBookingButtonState();

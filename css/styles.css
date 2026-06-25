@@ -313,8 +313,15 @@ body[data-page="home"] .booking-button:focus {
 }
 
 body[data-page="home"].booking-button-scrolled .booking-button {
-  background-color: #ffffff !important;
-  box-shadow: var(--shadow) !important;
+  background-color: var(--teal-900) !important;
+  color: #ffffff !important;
+  border-color: rgba(31, 79, 70, 0.9) !important;
+  box-shadow: 0 18px 34px -24px rgba(31, 79, 70, 0.75) !important;
+}
+
+body[data-page="home"].booking-button-scrolled .booking-button:hover,
+body[data-page="home"].booking-button-scrolled .booking-button:focus {
+  background-color: var(--teal-700) !important;
 }
 
 .menu-toggle {
