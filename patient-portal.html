@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Portal | The Place for Recovery</title>
+    <meta
+      name="description"
+      content="Secure patient portal access for The Place for Recovery. Log in to manage your care and appointments."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="assets/images/newlogo.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body data-page="contact">
+    <div class="site-shell">
+      <div class="bg-orb one"></div>
+      <div class="bg-orb two"></div>
+
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="index.html" aria-label="The Place for Recovery home">
+            <img class="brand-logo" src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+            <div class="brand-copy">
+              <p class="brand-title">The Place for Recovery</p>
+              <p class="brand-sub">Empowering Minds, Transforming Lives</p>
+            </div>
+          </a>
+
+          <nav class="nav-desktop" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="home" href="index.html">Home</a>
+            <a class="nav-link" data-nav="about" href="about.html">About</a>
+            <div class="nav-item has-sub">
+              <a class="nav-link" data-nav="services" href="services.html" aria-haspopup="true">Services</a>
+              <div class="nav-dropdown" aria-label="Service categories">
+                <a class="nav-dropdown-link" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+                <a class="nav-dropdown-link" href="medication-management.html">Medication Management</a>
+                <a class="nav-dropdown-link" href="psychotherapy-services.html">Psychotherapy Services</a>
+                <a class="nav-dropdown-link" href="substance-use-treatment.html">Substance Use Treatment</a>
+              </div>
+            </div>
+            <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+            <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+            <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="btn btn-primary nav-cta" href="https://provider.kareo.com/queen-alajemba#?view=booking" target="_blank" rel="noopener">Book Appointment</a>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              data-menu-toggle
+            >
+              &#9776;
+            </button>
+          </div>
+        </div>
+
+        <nav class="mobile-panel" data-mobile-panel aria-label="Mobile navigation">
+          <a class="nav-link" data-nav="home" href="index.html">Home</a>
+          <a class="nav-link" data-nav="about" href="about.html">About</a>
+          <div class="nav-group">
+            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <div class="nav-submenu" aria-label="Service categories">
+              <a class="nav-sublink" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+              <a class="nav-sublink" href="medication-management.html">Medication Management</a>
+              <a class="nav-sublink" href="psychotherapy-services.html">Psychotherapy Services</a>
+              <a class="nav-sublink" href="substance-use-treatment.html">Substance Use Treatment</a>
+            </div>
+          </div>
+          <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+          <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+          <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          <a class="btn btn-primary" href="https://provider.kareo.com/queen-alajemba#?view=booking" target="_blank" rel="noopener">Book Appointment</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-compare">
+          <article class="hero-bleed hero-bleed-page">
+            <div class="hero-bleed-bg" aria-hidden="true">
+              <img src="assets/images/unseen-studio-s9CC2SKySJM-unsplash.jpg" alt="" />
+            </div>
+            <div class="hero-bleed-overlay" aria-hidden="true"></div>
+            <div class="container hero-bleed-content" data-reveal>
+              <span class="eyebrow">Patient Portal</span>
+              <h1 class="hero-bleed-title">Secure login for appointments and care management</h1>
+              <p>
+                Use the portal below to access scheduling and patient services. If the embedded view does not load in your browser,
+                use the direct login button to open the secure Kareo portal in a new tab.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://provider.kareo.com/queen-alajemba#?view=booking" target="_blank" rel="noopener">Open Portal</a>
+                <a class="btn btn-soft" href="contact.html">Back to Contact</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <h2>Patient login</h2>
+              <p>Direct access to the Kareo portal is available here. The embedded frame opens the login experience in-page when supported.</p>
+            </div>
+            <div class="card" data-reveal>
+              <div style="position:relative; width:100%; min-height: 820px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); background: #fff;">
+                <iframe
+                  src="https://portal.kareo.com/app/new/login"
+                  title="Patient portal login"
+                  style="width:100%; height: 820px; border: none;"
+                ></iframe>
+              </div>
+              <div class="hero-actions" style="margin-top: 18px">
+                <a class="btn btn-primary" href="https://provider.kareo.com/queen-alajemba#?view=booking" target="_blank" rel="noopener">Open secure login</a>
+                <a class="btn btn-soft" href="contact.html">Need help?</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <img src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+              <div>
+                <strong>The Place for Recovery</strong>
+                <p>Empowering Minds, Transforming Lives.</p>
+              </div>
+            </div>
+            <a class="btn btn-primary" href="https://provider.kareo.com/queen-alajemba#?view=booking" target="_blank" rel="noopener">Book Appointment</a>
+          </div>
+
+          <div class="footer-grid">
+            <div>
+              <h4>About</h4>
+              <p>
+                Outpatient psychiatric and mental health care for adults, adolescents, and children. Compassionate, trauma-informed,
+                and evidence-based support.
+              </p>
+            </div>
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="telehealth.html">Telehealth</a></li>
+                <li><a href="adhd-testing.html">ADHD Testing</a></li>
+                <li><a href="insurances-payments.html">Payments</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="tel:7173789076">Call: 717-378-9076</a></li>
+                <li><a href="mailto:info@theplaceforrecovery.com">info@theplaceforrecovery.com</a></li>
+                <li>Manchester, Pennsylvania</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <ul>
+                <li>Monday-Friday: 8:00 am - 5:00 pm</li>
+                <li>Saturday-Sunday: Closed</li>
+                <li>Telehealth and in-office by appointment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>Copyright <span data-year></span> The Place for Recovery. All rights reserved.</span>
+            <span class="footer-powered">Powered by <a href="https://tech.omaxil.com" target="_blank" rel="noopener">OmaxilTech</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
