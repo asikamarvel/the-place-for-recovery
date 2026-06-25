@@ -293,6 +293,30 @@ video {
   background: rgba(45, 127, 98, 0.18);
 }
 
+.btn-compact {
+  padding: 10px 14px;
+  font-size: 0.86rem;
+}
+
+body[data-page="home"] .booking-button {
+  background-color: rgba(255, 255, 255, 0.86) !important;
+  color: var(--teal-900) !important;
+  border: 1px solid rgba(255, 255, 255, 0.72) !important;
+  box-shadow: 0 18px 34px -24px rgba(16, 35, 37, 0.45) !important;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+body[data-page="home"] .booking-button:hover,
+body[data-page="home"] .booking-button:focus {
+  background-color: #ffffff !important;
+}
+
+body[data-page="home"].booking-button-scrolled .booking-button {
+  background-color: #ffffff !important;
+  box-shadow: var(--shadow) !important;
+}
+
 .menu-toggle {
   width: 42px;
   height: 42px;
