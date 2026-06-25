@@ -161,13 +161,25 @@
 
   document.querySelectorAll(".footer-top").forEach(function (footerTop) {
     var bookingButton = footerTop.querySelector('a[href="#"]');
-    if (!footerTop.querySelector("[data-login-launch]")) {
-      var loginButton = createCompactLoginButton();
-      if (bookingButton && bookingButton.parentElement === footerTop) {
-        bookingButton.insertAdjacentElement("afterend", loginButton);
-      } else {
-        footerTop.appendChild(loginButton);
-      }
+    var loginButton = footerTop.querySelector(".footer-login-link") || createCompactLoginButton();
+    var actionGroup = footerTop.querySelector(".footer-action-group");
+
+    if (!loginButton.classList.contains("footer-login-link")) {
+      loginButton.classList.add("footer-login-link");
+    }
+
+    if (!actionGroup) {
+      actionGroup = document.createElement("div");
+      actionGroup.className = "footer-action-group";
+      footerTop.appendChild(actionGroup);
+    }
+
+    if (bookingButton && bookingButton.parentElement !== actionGroup) {
+      actionGroup.appendChild(bookingButton);
+    }
+
+    if (loginButton.parentElement !== actionGroup) {
+      actionGroup.appendChild(loginButton);
     }
   });
 
