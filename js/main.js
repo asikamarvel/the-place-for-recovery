@@ -7,6 +7,7 @@
   var loginModal;
   var loginIframe;
   var loginCloseButton;
+  var loginOpenUrl = loginUrl;
 
   function closeLoginModal() {
     if (!loginModal) {
@@ -55,7 +56,7 @@
 
   function openLoginModal() {
     ensureLoginModal();
-    loginIframe.src = loginUrl;
+    loginIframe.src = loginOpenUrl;
     loginModal.style.display = "flex";
     loginModal.setAttribute("aria-hidden", "false");
     loginCloseButton.focus();
@@ -63,9 +64,10 @@
 
   function createCompactLoginButton() {
     var link = document.createElement("a");
-    link.href = "#";
+    link.href = loginUrl;
+    link.target = "_blank";
+    link.rel = "noopener";
     link.className = "btn btn-ghost-light btn-compact";
-    link.setAttribute("data-login-launch", "true");
     link.textContent = "Patient Login";
     return link;
   }
@@ -102,20 +104,19 @@
     }
   });
 
-  document.querySelectorAll("[data-login-launch]").forEach(function (trigger) {
-    trigger.addEventListener("click", function (event) {
+  document.addEventListener("click", function (event) {
+    var trigger = event.target.closest("[data-login-launch]");
+    if (trigger) {
       event.preventDefault();
       openLoginModal();
-    });
-  });
+      return;
+    }
 
-  document.querySelectorAll('a[href="patient-portal.html"]').forEach(function (link) {
-    link.setAttribute("href", "#");
-    link.setAttribute("data-login-launch", "true");
-    link.addEventListener("click", function (event) {
+    var legacyPortalLink = event.target.closest('a[href="patient-portal.html"]');
+    if (legacyPortalLink) {
       event.preventDefault();
       openLoginModal();
-    });
+    }
   });
 
   var homeHeroActions = document.querySelector("body[data-page='home'] .hero-bleed .hero-actions");
