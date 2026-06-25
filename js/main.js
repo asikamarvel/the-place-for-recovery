@@ -9,6 +9,29 @@
   var loginCloseButton;
   var loginOpenUrl = loginUrl;
 
+  function openBookingPortal() {
+    var bookingButton = document.getElementById("bookingButton");
+    if (bookingButton) {
+      bookingButton.click();
+      return;
+    }
+
+    window.open(bookingUrl, "_blank", "noopener");
+  }
+
+  function ensureTebraMarker(link) {
+    if (!link || link.querySelector(".tebra-mini")) {
+      return;
+    }
+
+    var marker = document.createElement("span");
+    marker.className = "tebra-mini";
+    marker.textContent = "T";
+    marker.setAttribute("aria-label", "Tebra");
+    marker.setAttribute("title", "Tebra");
+    link.appendChild(marker);
+  }
+
   function closeLoginModal() {
     if (!loginModal) {
       return;
@@ -69,6 +92,7 @@
     link.rel = "noopener";
     link.className = "btn btn-ghost-light btn-compact";
     link.textContent = "Patient Login";
+    ensureTebraMarker(link);
     return link;
   }
 
@@ -99,8 +123,19 @@
   document.querySelectorAll('a[href="#"]').forEach(function (link) {
     var label = (link.textContent || "").trim().toLowerCase();
     if (label === "book appointment" || label === "book a telehealth visit") {
-      link.setAttribute("href", bookingUrl);
+      link.setAttribute("href", "#");
       link.classList.add("btn-compact");
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        openBookingPortal();
+      });
+    }
+  });
+
+  document.querySelectorAll("a").forEach(function (link) {
+    var label = (link.textContent || "").trim().toLowerCase();
+    if (label.indexOf("patient login") !== -1) {
+      ensureTebraMarker(link);
     }
   });
 

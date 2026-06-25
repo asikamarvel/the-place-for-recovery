@@ -298,6 +298,28 @@ video {
   font-size: 0.86rem;
 }
 
+.tebra-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  border-radius: 999px;
+  font-size: 0.58rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  background: #0097a7;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  vertical-align: middle;
+}
+
+.btn-soft .tebra-mini,
+.btn-primary .tebra-mini {
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
 body[data-page="home"] .booking-button {
   background-color: rgba(255, 255, 255, 0.86) !important;
   color: var(--teal-900) !important;
