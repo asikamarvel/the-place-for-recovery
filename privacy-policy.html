@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | The Place for Recovery</title>
+    <meta
+      name="description"
+      content="Notice of Privacy Practices for The Place for Recovery, LLC, including uses and disclosures of PHI, patient rights, and complaint information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="assets/images/newlogo.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .policy-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .policy-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 1300;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(9, 25, 27, 0.72);
+        backdrop-filter: blur(8px);
+      }
+
+      .policy-modal.is-open {
+        display: flex;
+      }
+
+      .policy-modal-panel {
+        width: min(1100px, 94vw);
+        height: min(88vh, 900px);
+        background: #ffffff;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 34px 90px -34px rgba(9, 25, 27, 0.72);
+        border: 1px solid rgba(16, 35, 37, 0.12);
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      .policy-modal-header,
+      .policy-modal-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 16px 20px;
+        background: linear-gradient(180deg, #ffffff 0%, #f6f8f8 100%);
+      }
+
+      .policy-modal-header {
+        border-bottom: 1px solid rgba(16, 35, 37, 0.08);
+      }
+
+      .policy-modal-footer {
+        border-top: 1px solid rgba(16, 35, 37, 0.08);
+        flex-wrap: wrap;
+      }
+
+      .policy-modal-close {
+        width: 42px;
+        height: 42px;
+        border-radius: 999px;
+        border: 1px solid rgba(16, 35, 37, 0.12);
+        background: #ffffff;
+        color: var(--text);
+        font-size: 1.35rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+
+      .policy-modal-frame {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #ffffff;
+      }
+
+      .policy-reader-card {
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: var(--shadow);
+        padding: 20px;
+      }
+
+      @media (max-width: 700px) {
+        .policy-modal-panel {
+          width: min(100vw, 100%);
+          height: min(100vh, 100vh);
+          border-radius: 0;
+        }
+
+        .policy-modal-header,
+        .policy-modal-footer {
+          padding: 14px 16px;
+        }
+      }
+    </style>
+    <script defer src="js/main.js"></script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18288629618"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18288629618');
+    </script>
+  </head>
+  <body data-page="privacy-policy">
+    <div class="site-shell">
+      <div class="bg-orb one"></div>
+      <div class="bg-orb two"></div>
+
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="index.html" aria-label="The Place for Recovery home">
+            <img class="brand-logo" src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+            <div class="brand-copy">
+              <p class="brand-title">The Place for Recovery</p>
+              <p class="brand-sub">Empowering Minds, Transforming Lives</p>
+            </div>
+          </a>
+
+          <nav class="nav-desktop" aria-label="Primary navigation">
+            <a class="nav-link" data-nav="home" href="index.html">Home</a>
+            <a class="nav-link" data-nav="about" href="about.html">About</a>
+            <div class="nav-item has-sub">
+              <a class="nav-link" data-nav="services" href="services.html" aria-haspopup="true">Services</a>
+              <div class="nav-dropdown" aria-label="Service categories">
+                <a class="nav-dropdown-link" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+                <a class="nav-dropdown-link" href="medication-management.html">Medication Management</a>
+                <a class="nav-dropdown-link" href="psychotherapy-services.html">Psychotherapy Services</a>
+                <a class="nav-dropdown-link" href="substance-use-treatment.html">Substance Use Treatment</a>
+              </div>
+            </div>
+            <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+            <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+            <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          </nav>
+
+          <div class="header-actions">
+            <a class="btn btn-primary nav-cta" href="#">Book Appointment</a>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              data-menu-toggle
+            >
+              &#9776;
+            </button>
+          </div>
+        </div>
+
+        <nav class="mobile-panel" data-mobile-panel aria-label="Mobile navigation">
+          <a class="nav-link" data-nav="home" href="index.html">Home</a>
+          <a class="nav-link" data-nav="about" href="about.html">About</a>
+          <div class="nav-group">
+            <a class="nav-link" data-nav="services" href="services.html">Services</a>
+            <div class="nav-submenu" aria-label="Service categories">
+              <a class="nav-sublink" href="psychiatric-evaluation.html">Psychiatric Evaluation</a>
+              <a class="nav-sublink" href="medication-management.html">Medication Management</a>
+              <a class="nav-sublink" href="psychotherapy-services.html">Psychotherapy Services</a>
+              <a class="nav-sublink" href="substance-use-treatment.html">Substance Use Treatment</a>
+            </div>
+          </div>
+          <a class="nav-link" data-nav="adhd" href="adhd-testing.html">ADHD Testing</a>
+          <a class="nav-link" data-nav="payments" href="insurances-payments.html">Payments</a>
+          <a class="nav-link" data-nav="contact" href="contact.html">Contact</a>
+          <a class="btn btn-primary" href="#">Book Appointment</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-compare hero-compare-secondary">
+          <article class="hero-bleed hero-bleed-a">
+            <div class="hero-bleed-bg" aria-hidden="true">
+              <img src="assets/images/unseen-studio-s9CC2SKySJM-unsplash.jpg" alt="" />
+            </div>
+            <div class="hero-bleed-overlay" aria-hidden="true"></div>
+            <div class="container hero-bleed-content">
+              <span class="eyebrow">Privacy Policy</span>
+              <h1 class="hero-bleed-title">
+                Notice of Privacy Practices
+                <span>for The Place for Recovery</span>
+              </h1>
+              <p>
+                This notice explains how your protected health information may be used and disclosed, and how you can access that
+                information.
+              </p>
+              <div class="policy-actions">
+                <a class="btn btn-primary" href="tel:7178311955">Speak with our Privacy Officer</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="container split">
+            <article data-reveal>
+              <span class="eyebrow">Effective date</span>
+              <h2 style="margin: 14px 0 10px">July 1, 2026</h2>
+              <p>
+                The Place for Recovery, LLC is required by federal and state law to maintain the privacy of your Protected Health
+                Information (PHI) and to give you this notice about our privacy practices, legal duties, and your rights.
+              </p>
+              <p>
+                If you have questions, contact our Privacy Officer at <a href="tel:7178311955">717 831 1955</a>, <a href="tel:8885815060">888 581 5060</a>, fax 717 831 1944, or <a href="mailto:Info@theplaceforrecovery.com">Info@theplaceforrecovery.com</a>.
+              </p>
+            </article>
+            <article class="card" data-reveal data-delay="1">
+              <h3>Privacy Officer</h3>
+              <p>
+                The Place for Recovery, LLC<br />
+                4807 Jonestown Road, suite 246, Harrisburg PA 17109<br />
+                965 Loucks Road #1074, York PA 17404<br />
+                1500 John F Kennedy Blvd, Suite 450, PMB 107, Philadelphia PA 19102
+              </p>
+              <p><strong>Phone:</strong> 717 831 1955<br /><strong>Phone:</strong> 888 581 5060<br /><strong>Fax:</strong> 717 831 1944</p>
+              <p><strong>Email:</strong> Info@theplaceforrecovery.com</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">How we use information</span>
+              <h2>Uses and disclosures of health information</h2>
+              <p>We may use and disclose PHI for treatment, payment, and healthcare operations.</p>
+            </div>
+            <div class="grid cards-3">
+              <article class="card" data-reveal>
+                <h3>Treatment</h3>
+                <p>
+                  We may use PHI or disclose it to physicians, psychiatrists, licensed therapists, case managers, and other
+                  healthcare providers involved in your care.
+                </p>
+                <p>
+                  Example: our staff psychiatrist may discuss medication management with your primary care physician to avoid
+                  adverse drug interactions.
+                </p>
+              </article>
+              <article class="card" data-reveal data-delay="1">
+                <h3>Payment</h3>
+                <p>
+                  We may use and disclose PHI to obtain payment for services, including billing, claims management, and medical
+                  necessity reviews by your insurance plan.
+                </p>
+                <p>
+                  Example: we may send diagnosis and attendance information to your insurer so services can be reimbursed.
+                </p>
+              </article>
+              <article class="card" data-reveal data-delay="2">
+                <h3>Healthcare operations</h3>
+                <p>
+                  We may use PHI for quality improvement, staff training, credentialing, accreditation, licensure, and performance
+                  review activities.
+                </p>
+                <p>
+                  Example: we may evaluate our therapeutic programs or train interns under strict supervision.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container split">
+            <article class="card" data-reveal>
+              <h3>Special protections for psychotherapy notes</h3>
+              <p>
+                Psychotherapy notes are separate notes recorded by a mental health professional documenting or analyzing the
+                contents of a counseling session. HIPAA gives these notes heightened protection.
+              </p>
+              <p>
+                We must obtain your explicit written authorization before using or disclosing psychotherapy notes, except for
+                ongoing treatment by the originator of the notes, our own mental health training programs, legal defense actions,
+                disclosures required by law, health oversight, or preventing a serious and imminent threat.
+              </p>
+            </article>
+            <article class="card" data-reveal data-delay="1">
+              <h3>Situations where you may agree or object</h3>
+              <p>
+                In some situations we may share information if you do not object, or if we reasonably infer from the circumstances
+                that you do not object.
+              </p>
+              <ul>
+                <li>Involvement in your care with family members, close friends, or others you identify</li>
+                <li>Disaster relief coordination for notifying your family about your location or condition</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Without authorization</span>
+              <h2>Permitted and required disclosures</h2>
+              <p>
+                We may use or disclose PHI without your authorization in certain legally permitted or required situations.
+              </p>
+            </div>
+            <div class="grid cards-4">
+              <article class="card" data-reveal>
+                <h4>Serious threat</h4>
+                <p>To avert a serious and imminent threat to your health or safety or the health and safety of the public.</p>
+              </article>
+              <article class="card" data-reveal data-delay="1">
+                <h4>Abuse or neglect</h4>
+                <p>To report child abuse, neglect, or vulnerable adult abuse to the appropriate authorities.</p>
+              </article>
+              <article class="card" data-reveal data-delay="2">
+                <h4>Public health and oversight</h4>
+                <p>For public health reporting, adverse medication reactions, audits, investigations, inspections, and licensure.</p>
+              </article>
+              <article class="card" data-reveal data-delay="3">
+                <h4>Legal and government functions</h4>
+                <p>
+                  In response to lawful court or subpoena requests, for law enforcement purposes, military and national security
+                  needs, and workers compensation compliance.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Your rights</span>
+              <h2>Your individual privacy rights</h2>
+              <p>All requests to exercise these rights must be submitted in writing to our Privacy Officer.</p>
+            </div>
+            <div class="policy-reader-card" data-reveal>
+              <div class="split" style="align-items: start;">
+                <div>
+                  <h3 style="margin: 0 0 10px;">Read the full legal document</h3>
+                  <p style="margin: 0; color: var(--muted);">
+                    Open the complete Notice of Privacy Practices in a built-in reader. You can review it here and download the PDF
+                    when needed.
+                  </p>
+                </div>
+                <div class="policy-actions" style="margin-top: 0; justify-content: flex-end;">
+                  <button class="btn btn-primary" type="button" data-policy-open>Read Full Legal Document</button>
+                  <a class="btn btn-soft" href="assets/docs/Notice%20of%20Privacy%20Policy.pdf" target="_blank" rel="noopener">Open PDF in New Tab</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container split">
+            <article class="card" data-reveal>
+              <h3>Complaints and contact information</h3>
+              <p>
+                If you believe your privacy rights have been violated, or if you disagree with a decision about access to your
+                records, you may file a complaint with our clinic or with the federal government. We will not retaliate against you
+                for filing a complaint.
+              </p>
+            </article>
+            <article class="card" data-reveal data-delay="1">
+              <h3>File a complaint</h3>
+              <p>
+                <strong>The Place for Recovery, LLC</strong><br />
+                Attn: Privacy Officer<br />
+                4807 Jonestown Road, suite 246, Harrisburg PA 17109<br />
+                965 Loucks Road #1074, York PA 17404<br />
+                1500 John F Kennedy Blvd, Suite 450, PMB 107, Philadelphia PA 19102
+              </p>
+              <p><strong>Phone:</strong> 717 831 1955<br /><strong>Phone:</strong> 888 581 5060<br /><strong>Fax:</strong> 717 831 1944<br /><strong>Email:</strong> Info@theplaceforrecovery.com</p>
+              <p>
+                <strong>U.S. Department of Health and Human Services</strong><br />
+                Office for Civil Rights (OCR)<br />
+                200 Independence Avenue, S.W., Room 509F, HHH Bldg.<br />
+                Washington, D.C. 20201<br />
+                Phone: 1-877-696-6775<br />
+                Website: hhs.gov/ocr/privacy/hipaa/complaints/
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <img src="assets/images/newlogo.jpg" alt="The Place for Recovery logo" />
+              <div>
+                <strong>The Place for Recovery</strong>
+                <p>Empowering Minds, Transforming Lives.</p>
+              </div>
+            </div>
+            <a class="btn btn-primary" href="#">Book Appointment</a>
+          </div>
+
+          <div class="footer-grid">
+            <div>
+              <h4>About</h4>
+              <p>
+                Outpatient psychiatric and mental health care for adults, adolescents, and children. Compassionate, trauma-informed,
+                and evidence-based support.
+              </p>
+            </div>
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="telehealth.html">Telehealth</a></li>
+                <li><a href="adhd-testing.html">ADHD Testing</a></li>
+                <li><a href="insurances-payments.html">Payments</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="tel:7178311955">Phone: 717 831 1955</a></li>
+                <li><a href="tel:8885815060">Phone: 888 581 5060</a></li>
+                <li>Fax: 717 831 1944</li>
+                <li><a href="mailto:Info@theplaceforrecovery.com">Info@theplaceforrecovery.com</a></li>
+                <li>4807 Jonestown Road, suite 246, Harrisburg PA 17109</li>
+                <li>965 Loucks Road #1074, York PA 17404</li>
+                <li>1500 John F Kennedy Blvd, Suite 450, PMB 107, Philadelphia PA 19102</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <ul>
+                <li>Monday-Friday: 8:00 am - 5:00 pm</li>
+                <li>Saturday-Sunday: Closed</li>
+                <li>Telehealth and in-office by appointment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>Copyright <span data-year></span> The Place for Recovery. All rights reserved.</span>
+            <span class="footer-powered">Powered by <a href="https://tech.omaxil.com" target="_blank" rel="noopener">OmaxilTech</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="policy-modal" data-policy-modal aria-hidden="true">
+      <div class="policy-modal-panel" role="dialog" aria-modal="true" aria-labelledby="policyModalTitle">
+        <div class="policy-modal-header">
+          <div>
+            <p class="eyebrow" style="margin: 0;">Notice of Privacy Practices</p>
+            <h2 id="policyModalTitle" style="margin: 6px 0 0; font-size: 1.15rem;">The Place for Recovery, LLC</h2>
+          </div>
+          <button class="policy-modal-close" type="button" aria-label="Close privacy policy" data-policy-close>&times;</button>
+        </div>
+        <iframe
+          class="policy-modal-frame"
+          title="Notice of Privacy Practices PDF"
+          src="assets/docs/Notice%20of%20Privacy%20Policy.pdf"
+        ></iframe>
+        <div class="policy-modal-footer">
+          <p style="margin: 0; color: var(--muted);">
+            Use the embedded reader to review the policy. If you need a copy, download the PDF.
+          </p>
+          <a class="btn btn-soft" href="assets/docs/Notice%20of%20Privacy%20Policy.pdf" target="_blank" rel="noopener">Open PDF in New Tab</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var modal = document.querySelector("[data-policy-modal]");
+        var openButton = document.querySelector("[data-policy-open]");
+        var closeButton = document.querySelector("[data-policy-close]");
+
+        function closeModal() {
+          modal.classList.remove("is-open");
+          modal.setAttribute("aria-hidden", "true");
+        }
+
+        function openModal() {
+          modal.classList.add("is-open");
+          modal.setAttribute("aria-hidden", "false");
+        }
+
+        openButton.addEventListener("click", openModal);
+        closeButton.addEventListener("click", closeModal);
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            closeModal();
+          }
+        });
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape" && modal.classList.contains("is-open")) {
+            closeModal();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+
+
+

@@ -96,6 +96,51 @@
     return link;
   }
 
+  function configurePrimaryCta() {
+    var primaryCta = document.querySelector(".header-actions .nav-cta");
+    var mobilePrimaryCta = mobilePanel ? mobilePanel.querySelector(".btn.btn-primary[href='#']") : null;
+
+    function setBookingCta(link) {
+      if (!link) {
+        return;
+      }
+
+      link.textContent = "Book Appointment";
+      link.removeAttribute("data-login-launch");
+      link.setAttribute("href", "#");
+      link.classList.remove("btn-compact");
+      link.classList.remove("footer-login-link");
+      link.removeAttribute("target");
+      link.removeAttribute("rel");
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        openBookingPortal();
+      });
+    }
+
+    function setPortalCta(link) {
+      if (!link) {
+        return;
+      }
+
+      link.textContent = "Patient Portal";
+      link.setAttribute("href", loginUrl);
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener");
+      link.classList.add("btn-compact");
+      ensureTebraMarker(link);
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        openLoginModal();
+      });
+    }
+
+    setPortalCta(primaryCta);
+    if (mobilePrimaryCta) {
+      setPortalCta(mobilePrimaryCta);
+    }
+  }
+
   function closeMenu() {
     body.classList.remove("menu-open");
     if (menuToggle) {
@@ -119,6 +164,8 @@
       }
     });
   }
+
+  configurePrimaryCta();
 
   document.querySelectorAll('a[href="#"]').forEach(function (link) {
     var label = (link.textContent || "").trim().toLowerCase();
@@ -153,11 +200,6 @@
       openLoginModal();
     }
   });
-
-  var homeHeroActions = document.querySelector("body[data-page='home'] .hero-bleed .hero-actions");
-  if (homeHeroActions && !homeHeroActions.querySelector("[data-login-launch]")) {
-    homeHeroActions.appendChild(createCompactLoginButton());
-  }
 
   document.querySelectorAll(".footer-top").forEach(function (footerTop) {
     var bookingButton = footerTop.querySelector('a[href="#"]');
