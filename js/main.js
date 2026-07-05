@@ -129,10 +129,6 @@
       link.setAttribute("rel", "noopener");
       link.classList.add("btn-compact");
       ensureTebraMarker(link);
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        openLoginModal();
-      });
     }
 
     setPortalCta(primaryCta);
