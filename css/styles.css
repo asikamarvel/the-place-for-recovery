@@ -614,6 +614,10 @@ body[data-page="home"].booking-button-scrolled .booking-button:focus {
   background: rgba(255, 255, 255, 0.22);
 }
 
+.hero-mobile-portal {
+  display: none;
+}
+
 .hero-bleed-title {
   margin: 16px 0 18px;
   font-family: "Sora", "Trebuchet MS", sans-serif;
@@ -1935,10 +1939,20 @@ textarea {
 
   body[data-page="home"] .hero-bleed .eyebrow-home-intro {
     display: inline-block;
+    font-size: 0.66rem;
+    line-height: 1.28;
+    letter-spacing: 0.02em;
+    padding: 5px 10px;
+    text-transform: none;
   }
 
   body[data-page="home"] .eyebrow-home-intro .eyebrow-mobile-break {
     display: block;
+  }
+
+  body[data-page="home"] .eyebrow-home-intro .eyebrow-home-intro-line {
+    display: inline-block;
+    white-space: nowrap;
   }
 
   .hero-actions,
@@ -1946,6 +1960,16 @@ textarea {
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  body[data-page="home"] .hero-bleed .hero-actions {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  body[data-page="home"] .hero-bleed .hero-actions .hero-mobile-portal {
+    display: inline-flex;
   }
 
   .footer-action-group {
