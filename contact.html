@@ -71,7 +71,11 @@
           </nav>
 
           <div class="header-actions">
-            <a class="btn btn-primary nav-cta" href="#">Book Appointment</a>
+            <div class="nav-cta-group">
+              <a class="nav-cta-segment" href="#">Book Appointment</a>
+              <span class="nav-cta-divider" aria-hidden="true">|</span>
+              <a class="nav-cta-segment nav-cta-portal" href="#">Patient Portal</a>
+            </div>
             <button
               class="menu-toggle"
               type="button"
@@ -135,9 +139,29 @@
             </article>
             <article class="card" data-reveal data-delay="2">
               <h3>Office Addresses</h3>
-              <p>4807 Jonestown Road, suite 246, Harrisburg PA 17109</p>
-              <p>965 Loucks Road #1074, York PA 17404</p>
-              <p>1500 John F Kennedy Blvd, Suite 450, PMB 107, Philadelphia PA 19102</p>
+              <div class="address-list">
+                <div class="address-item">
+                  <span class="address-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span>
+                  <div>
+                    <strong>Harrisburg, PA</strong>
+                    <p>4807 Jonestown Road, suite 246, Harrisburg PA 17109</p>
+                  </div>
+                </div>
+                <div class="address-item">
+                  <span class="address-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span>
+                  <div>
+                    <strong>York, PA</strong>
+                    <p>965 Loucks Road #1074, York PA 17404</p>
+                  </div>
+                </div>
+                <div class="address-item">
+                  <span class="address-pin"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 6 8 12 8 12s8-6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span>
+                  <div>
+                    <strong>Philadelphia, PA</strong>
+                    <p>1500 John F Kennedy Blvd, Suite 450, PMB 107, Philadelphia PA 19102</p>
+                  </div>
+                </div>
+              </div>
             </article>
           </div>
         </section>

@@ -97,44 +97,20 @@
   }
 
   function configurePrimaryCta() {
-    var primaryCta = document.querySelector(".header-actions .nav-cta");
-    var mobilePrimaryCta = mobilePanel ? mobilePanel.querySelector(".btn.btn-primary[href='#']") : null;
-
-    function setBookingCta(link) {
-      if (!link) {
-        return;
-      }
-
-      link.textContent = "Book Appointment";
-      link.removeAttribute("data-login-launch");
-      link.setAttribute("href", "#");
-      link.classList.remove("btn-compact");
-      link.classList.remove("footer-login-link");
-      link.removeAttribute("target");
-      link.removeAttribute("rel");
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        openBookingPortal();
-      });
-    }
+    var portalCta = document.querySelector(".header-actions .nav-cta-portal");
 
     function setPortalCta(link) {
       if (!link) {
         return;
       }
 
-      link.textContent = "Patient Portal";
       link.setAttribute("href", loginUrl);
       link.setAttribute("target", "_blank");
       link.setAttribute("rel", "noopener");
-      link.classList.add("btn-compact");
       ensureTebraMarker(link);
     }
 
-    setPortalCta(primaryCta);
-    if (mobilePrimaryCta) {
-      setPortalCta(mobilePrimaryCta);
-    }
+    setPortalCta(portalCta);
   }
 
   function closeMenu() {
