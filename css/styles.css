@@ -1740,6 +1740,40 @@ textarea {
   resize: vertical;
 }
 
+.sms-disclosure {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--muted);
+  background: rgba(45, 127, 98, 0.06);
+  border: 1px solid rgba(45, 127, 98, 0.16);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 2px 0;
+}
+
+.sms-disclosure p {
+  margin: 0 0 4px;
+}
+
+.sms-disclosure p:last-child {
+  margin-bottom: 0;
+}
+
+.consent-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.consent-check input[type="checkbox"] {
+  width: auto;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
 .site-footer {
   margin-top: clamp(3rem, 6vw, 5rem);
   background: #0f2628;

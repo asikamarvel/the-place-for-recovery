@@ -249,6 +249,12 @@
                     <input type="tel" name="phone" />
                   </label>
                 </div>
+                <div class="sms-disclosure">
+                  <p>By clicking SUBMIT you consent to receiving SMS messages.</p>
+                  <p>Messages and data rates may apply. Message frequency will vary.</p>
+                  <p>Reply STOP to opt-out of messaging.</p>
+                  <p>Reply HELP for customer care contact information.</p>
+                </div>
                 <label>
                   Reason for contact
                   <select name="reason">
@@ -262,6 +268,10 @@
                 <label>
                   Message
                   <textarea name="message" required></textarea>
+                </label>
+                <label class="consent-check">
+                  <input type="checkbox" name="privacy-consent" required />
+                  <span>I have read and acknowledged the <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span>
                 </label>
                 <button class="btn btn-primary" type="submit">Send Request</button>
               </form>
