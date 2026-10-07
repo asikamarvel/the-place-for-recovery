@@ -1860,10 +1860,22 @@ textarea {
   margin-top: 1.2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   color: rgba(219, 236, 235, 0.74);
   font-size: 0.82rem;
+}
+
+.footer-seal {
+  display: flex;
+  align-items: center;
+}
+
+.footer-seal img {
+  display: block;
+  width: 73px;
+  height: 79px;
 }
 
 .footer-powered {
