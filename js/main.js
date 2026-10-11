@@ -527,4 +527,14 @@
       });
     }
   }
+  // Lead form: the mailto action opens the visitor's email app, then we move to
+  // the thank-you page, which fires the Google Ads "Submit lead form" conversion.
+  var leadForm = document.querySelector("[data-lead-form]");
+  if (leadForm) {
+    leadForm.addEventListener("submit", function () {
+      setTimeout(function () {
+        window.location.href = "thank-you.html";
+      }, 1200);
+    });
+  }
 })();
