@@ -223,7 +223,12 @@
               <p style="margin-bottom: 12px">
                 Fill this form and our team will follow up shortly.
               </p>
-              <form class="form" action="mailto:Info@theplaceforrecovery.com" method="post" enctype="text/plain" data-lead-form>
+              <form class="form" action="https://formsubmit.co/Info@theplaceforrecovery.com" method="POST">
+                <input type="hidden" name="_subject" value="New website contact request" />
+                <input type="hidden" name="_next" value="https://www.theplaceforrecovery.com/thank-you.html" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off" />
                 <div class="row">
                   <label>
                     First name
